@@ -1,0 +1,6 @@
+[submodule "QMUIKit-Document"]
+	path = QMUIKit-Document
+	url = https://github.com/looseyi/QMUIKit-Document.git
+[submodule "docs_name"]
+	path = docs_name
+	url = https://github.com/looseyi/QMUIKit-Document.git
