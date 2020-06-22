@@ -1,0 +1,530 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 27,
+      "symbol": "AFNetworkReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 28,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 28,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 28,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 28,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 29,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusNotReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 29,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusNotReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 29,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusNotReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 29,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusNotReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 30,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWWAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 30,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWWAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 30,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWWAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 30,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWWAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 31,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWiFi",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 31,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWiFi",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 31,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWiFi",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 31,
+      "symbol": "AFNetworkReachabilityStatus.AFNetworkReachabilityStatusReachableViaWiFi",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 204,
+      "symbol": "AFNetworkingReachabilityNotificationStatusItem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 204,
+      "symbol": "AFNetworkingReachabilityNotificationStatusItem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 204,
+      "symbol": "AFNetworkingReachabilityNotificationStatusItem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h",
+      "line": 204,
+      "symbol": "AFNetworkingReachabilityNotificationStatusItem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 25,
+      "symbol": "AFSSLPinningMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 26,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 26,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 26,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 26,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 27,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModePublicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 27,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModePublicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 27,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModePublicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 27,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModePublicKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 28,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeCertificate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 28,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeCertificate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 28,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeCertificate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h",
+      "line": 28,
+      "symbol": "AFSSLPinningMode.AFSSLPinningModeCertificate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 86,
+      "symbol": "AFHTTPRequestQueryStringSerializationStyle.AFHTTPRequestQueryStringDefaultStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 86,
+      "symbol": "AFHTTPRequestQueryStringSerializationStyle.AFHTTPRequestQueryStringDefaultStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 86,
+      "symbol": "AFHTTPRequestQueryStringSerializationStyle.AFHTTPRequestQueryStringDefaultStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 86,
+      "symbol": "AFHTTPRequestQueryStringSerializationStyle.AFHTTPRequestQueryStringDefaultStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 477,
+      "symbol": "kAFUploadStream3GSuggestedDelay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 477,
+      "symbol": "kAFUploadStream3GSuggestedDelay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 477,
+      "symbol": "kAFUploadStream3GSuggestedDelay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h",
+      "line": 477,
+      "symbol": "kAFUploadStream3GSuggestedDelay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 63,
+      "symbol": "AFHTTPResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 63,
+      "symbol": "AFHTTPResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 63,
+      "symbol": "AFHTTPResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 63,
+      "symbol": "AFHTTPResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 119,
+      "symbol": "AFJSONResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 119,
+      "symbol": "AFJSONResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 119,
+      "symbol": "AFJSONResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 119,
+      "symbol": "AFJSONResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 197,
+      "symbol": "AFPropertyListResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 197,
+      "symbol": "AFPropertyListResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 197,
+      "symbol": "AFPropertyListResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 197,
+      "symbol": "AFPropertyListResponseSerializer.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 311,
+      "symbol": "AFNetworkingOperationFailingURLResponseDataErrorKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 311,
+      "symbol": "AFNetworkingOperationFailingURLResponseDataErrorKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 311,
+      "symbol": "AFNetworkingOperationFailingURLResponseDataErrorKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h",
+      "line": 311,
+      "symbol": "AFNetworkingOperationFailingURLResponseDataErrorKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h",
+      "line": 384,
+      "symbol": "AFURLSessionManager.-setTaskDidFinishCollectingMetricsBlock:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h",
+      "line": 384,
+      "symbol": "AFURLSessionManager.-setTaskDidFinishCollectingMetricsBlock:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h",
+      "line": 384,
+      "symbol": "AFURLSessionManager.-setTaskDidFinishCollectingMetricsBlock:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods"
+}

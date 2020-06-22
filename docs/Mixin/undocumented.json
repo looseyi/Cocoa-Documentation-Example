@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/Mixin/Mixin/Classes/Mixin-umbrella.h",
+      "line": 16,
+      "symbol": "MixinVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods/Mixin/Mixin/Classes/Mixin-umbrella.h",
+      "line": 17,
+      "symbol": "MixinVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/edmond/Documents/xueqiu/Cocoa-Documentation-Example/Pods"
+}

@@ -1,0 +1,2490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AFURLSessionManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/AFURLSessionManager" class="dashAnchor"></a>
+
+    <a title="AFURLSessionManager Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (88% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      AFURLSessionManager Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFCompoundResponseSerializer.html">AFCompoundResponseSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFHTTPRequestSerializer.html">AFHTTPRequestSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFHTTPResponseSerializer.html">AFHTTPResponseSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFHTTPSessionManager.html">AFHTTPSessionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFImageResponseSerializer.html">AFImageResponseSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFJSONRequestSerializer.html">AFJSONRequestSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFJSONResponseSerializer.html">AFJSONResponseSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFNetworkReachabilityManager.html">AFNetworkReachabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFPropertyListRequestSerializer.html">AFPropertyListRequestSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFPropertyListResponseSerializer.html">AFPropertyListResponseSerializer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFSecurityPolicy.html">AFSecurityPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AFURLSessionManager.html">AFURLSessionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)AFXMLParserResponseSerializer">AFXMLParserResponseSerializer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingOperationFailingURLRequestErrorKey">AFNetworkingOperationFailingURLRequestErrorKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingOperationFailingURLResponseDataErrorKey">AFNetworkingOperationFailingURLResponseDataErrorKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingOperationFailingURLResponseErrorKey">AFNetworkingOperationFailingURLResponseErrorKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingReachabilityDidChangeNotification">AFNetworkingReachabilityDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingReachabilityNotificationStatusItem">AFNetworkingReachabilityNotificationStatusItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteAssetPathKey">AFNetworkingTaskDidCompleteAssetPathKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteErrorKey">AFNetworkingTaskDidCompleteErrorKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteNotification">AFNetworkingTaskDidCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteResponseDataKey">AFNetworkingTaskDidCompleteResponseDataKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteResponseSerializerKey">AFNetworkingTaskDidCompleteResponseSerializerKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteSerializedResponseKey">AFNetworkingTaskDidCompleteSerializedResponseKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidCompleteSessionTaskMetrics">AFNetworkingTaskDidCompleteSessionTaskMetrics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidResumeNotification">AFNetworkingTaskDidResumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFNetworkingTaskDidSuspendNotification">AFNetworkingTaskDidSuspendNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFURLRequestSerializationErrorDomain">AFURLRequestSerializationErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFURLResponseSerializationErrorDomain">AFURLResponseSerializationErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFURLSessionDidInvalidateNotification">AFURLSessionDidInvalidateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFURLSessionDownloadTaskDidFailToMoveFileNotification">AFURLSessionDownloadTaskDidFailToMoveFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AFURLSessionDownloadTaskDidMoveFileSuccessfullyNotification">AFURLSessionDownloadTaskDidMoveFileSuccessfullyNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kAFUploadStream3GSuggestedDelay">kAFUploadStream3GSuggestedDelay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kAFUploadStream3GSuggestedPacketSize">kAFUploadStream3GSuggestedPacketSize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AFHTTPRequestQueryStringSerializationStyle.html">AFHTTPRequestQueryStringSerializationStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AFNetworkReachabilityStatus.html">AFNetworkReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AFSSLPinningMode.html">AFSSLPinningMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AFMultipartFormData.html">AFMultipartFormData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AFURLRequestSerialization.html">AFURLRequestSerialization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AFURLResponseSerialization.html">AFURLResponseSerialization</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@AFJSONObjectByRemovingKeysWithNullValues">AFJSONObjectByRemovingKeysWithNullValues</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@AFPercentEscapedStringFromString">AFPercentEscapedStringFromString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@AFQueryStringFromParameters">AFQueryStringFromParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@AFStringFromNetworkReachabilityStatus">AFStringFromNetworkReachabilityStatus</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>AFURLSessionManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">AFURLSessionManager</span>
+    <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSURLSessionDelegate</span><span class="p">,</span> <span class="n">NSURLSessionTaskDelegate</span><span class="p">,</span>
+                <span class="n">NSURLSessionDataDelegate</span><span class="p">,</span> <span class="n">NSURLSessionDownloadDelegate</span><span class="p">,</span>
+                <span class="n">NSSecureCoding</span><span class="p">,</span> <span class="n">NSCopying</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>AFURLSessionManager</code> creates and manages an <code>NSURLSession</code> object based on a specified <code>NSURLSessionConfiguration</code> object, which conforms to <code>&lt;NSURLSessionTaskDelegate&gt;</code>, <code>&lt;NSURLSessionDataDelegate&gt;</code>, <code>&lt;NSURLSessionDownloadDelegate&gt;</code>, and <code>&lt;NSURLSessionDelegate&gt;</code>.</p>
+<h2 id='subclassing-notes' class='heading'>Subclassing Notes</h2>
+
+<p>This is the base class for <code><a href="../Classes/AFHTTPSessionManager.html">AFHTTPSessionManager</a></code>, which adds functionality specific to making HTTP requests. If you are looking to extend <code>AFURLSessionManager</code> specifically for HTTP, consider subclassing <code><a href="../Classes/AFHTTPSessionManager.html">AFHTTPSessionManager</a></code> instead.</p>
+<h2 id='nsurlsession-amp-nsurlsessiontask-delegate-methods' class='heading'>NSURLSession &amp; NSURLSessionTask Delegate Methods</h2>
+
+<p><code>AFURLSessionManager</code> implements the following delegate methods:</p>
+<h3 id='code-nsurlsessiondelegate-code' class='heading'><code>NSURLSessionDelegate</code></h3>
+
+<ul>
+<li><code>URLSession:didBecomeInvalidWithError:</code></li>
+<li><code>URLSession:didReceiveChallenge:completionHandler:</code></li>
+<li><code>URLSessionDidFinishEventsForBackgroundURLSession:</code></li>
+</ul>
+<h3 id='code-nsurlsessiontaskdelegate-code' class='heading'><code>NSURLSessionTaskDelegate</code></h3>
+
+<ul>
+<li><code>URLSession:willPerformHTTPRedirection:newRequest:completionHandler:</code></li>
+<li><code>URLSession:task:didReceiveChallenge:completionHandler:</code></li>
+<li><code>URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</code></li>
+<li><code>URLSession:task:needNewBodyStream:</code></li>
+<li><code>URLSession:task:didCompleteWithError:</code></li>
+</ul>
+<h3 id='code-nsurlsessiondatadelegate-code' class='heading'><code>NSURLSessionDataDelegate</code></h3>
+
+<ul>
+<li><code>URLSession:dataTask:didReceiveResponse:completionHandler:</code></li>
+<li><code>URLSession:dataTask:didBecomeDownloadTask:</code></li>
+<li><code>URLSession:dataTask:didReceiveData:</code></li>
+<li><code>URLSession:dataTask:willCacheResponse:completionHandler:</code></li>
+</ul>
+<h3 id='code-nsurlsessiondownloaddelegate-code' class='heading'><code>NSURLSessionDownloadDelegate</code></h3>
+
+<ul>
+<li><code>URLSession:downloadTask:didFinishDownloadingToURL:</code></li>
+<li><code>URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:</code></li>
+<li><code>URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:</code></li>
+</ul>
+
+<p>If any of these methods are overridden in a subclass, they <em>must</em> call the <code>super</code> implementation first.</p>
+<h2 id='network-reachability-monitoring' class='heading'>Network Reachability Monitoring</h2>
+
+<p>Network reachability status and change monitoring is available through the <code>reachabilityManager</code> property. Applications may choose to monitor network reachability conditions in order to prevent or suspend any outbound requests. See <code><a href="../Classes/AFNetworkReachabilityManager.html">AFNetworkReachabilityManager</a></code> for more details.</p>
+<h2 id='nscoding-caveats' class='heading'>NSCoding Caveats</h2>
+
+<ul>
+<li>Encoded managers do not include any block properties. Be sure to set delegate callback blocks when using <code>-initWithCoder:</code> or <code>NSKeyedUnarchiver</code>.</li>
+</ul>
+<h2 id='nscopying-caveats' class='heading'>NSCopying Caveats</h2>
+
+<ul>
+<li><code>-copy</code> and <code>-copyWithZone:</code> return a new manager with a new <code>NSURLSession</code> created from the configuration of the original.</li>
+<li><p>Operation copies do not include any delegate callback blocks, as they often strongly captures a reference to <code>self</code>, which would otherwise have the unintuitive side-effect of pointing to the <em>original</em> session manager when copied.</p></li>
+</ul><div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Managers for background sessions must be owned for the duration of their use. This can be accomplished by creating an application-wide or shared singleton instance.</p>
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)session"></a>
+                    <a name="//apple_ref/swift/Property/session" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)session">session</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The managed session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">session</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">URLSession</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)operationQueue"></a>
+                    <a name="//apple_ref/swift/Property/operationQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)operationQueue">operationQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The operation queue on which delegate callbacks are run.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSOperationQueue</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">operationQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">operationQueue</span><span class="p">:</span> <span class="kt">OperationQueue</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)responseSerializer"></a>
+                    <a name="//apple_ref/swift/Property/responseSerializer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)responseSerializer">responseSerializer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Responses sent from the server in data tasks created with <code>dataTaskWithRequest:success:failure:</code> and run using the <code>GET</code> / <code>POST</code> / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an instance of <code><a href="../Classes/AFJSONResponseSerializer.html">AFJSONResponseSerializer</a></code>.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <code>responseSerializer</code> must not be <code>nil</code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/AFURLResponseSerialization.html">AFURLResponseSerialization</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span> <span class="n">responseSerializer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">responseSerializer</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AFURLResponseSerialization.html">AFURLResponseSerialization</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Managing%20Security%20Policy"></a>
+                <a name="//apple_ref/swift/Section/Managing Security Policy" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Managing%20Security%20Policy"></a>
+                  <h3 class="section-name"><p>Managing Security Policy</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)securityPolicy"></a>
+                    <a name="//apple_ref/swift/Property/securityPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)securityPolicy">securityPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The security policy used by created session to evaluate server trust for secure connections. <code>AFURLSessionManager</code> uses the <code>defaultPolicy</code> unless otherwise specified.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n"><a href="../Classes/AFSecurityPolicy.html">AFSecurityPolicy</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">securityPolicy</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">securityPolicy</span><span class="p">:</span> <span class="kt"><a href="../Classes/AFSecurityPolicy.html">AFSecurityPolicy</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Monitoring%20Network%20Reachability"></a>
+                <a name="//apple_ref/swift/Section/Monitoring Network Reachability" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Monitoring%20Network%20Reachability"></a>
+                  <h3 class="section-name"><p>Monitoring Network Reachability</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)reachabilityManager"></a>
+                    <a name="//apple_ref/swift/Property/reachabilityManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)reachabilityManager">reachabilityManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The network reachability manager. <code>AFURLSessionManager</code> uses the <code>sharedManager</code> by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n"><a href="../Classes/AFNetworkReachabilityManager.html">AFNetworkReachabilityManager</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">reachabilityManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">reachabilityManager</span><span class="p">:</span> <span class="kt"><a href="../Classes/AFNetworkReachabilityManager.html">AFNetworkReachabilityManager</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Getting%20Session%20Tasks"></a>
+                <a name="//apple_ref/swift/Section/Getting Session Tasks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Getting%20Session%20Tasks"></a>
+                  <h3 class="section-name"><p>Getting Session Tasks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)tasks"></a>
+                    <a name="//apple_ref/swift/Property/tasks" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)tasks">tasks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The data, upload, and download tasks currently run by the managed session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSURLSessionTask</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">tasks</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tasks</span><span class="p">:</span> <span class="p">[</span><span class="kt">URLSessionTask</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)dataTasks"></a>
+                    <a name="//apple_ref/swift/Property/dataTasks" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)dataTasks">dataTasks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The data tasks currently run by the managed session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSURLSessionDataTask</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">dataTasks</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dataTasks</span><span class="p">:</span> <span class="p">[</span><span class="kt">URLSessionDataTask</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)uploadTasks"></a>
+                    <a name="//apple_ref/swift/Property/uploadTasks" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)uploadTasks">uploadTasks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The upload tasks currently run by the managed session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSURLSessionUploadTask</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">uploadTasks</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">uploadTasks</span><span class="p">:</span> <span class="p">[</span><span class="kt">URLSessionUploadTask</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)downloadTasks"></a>
+                    <a name="//apple_ref/swift/Property/downloadTasks" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)downloadTasks">downloadTasks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The download tasks currently run by the managed session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSURLSessionDownloadTask</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">downloadTasks</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">downloadTasks</span><span class="p">:</span> <span class="p">[</span><span class="kt">URLSessionDownloadTask</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Managing%20Callback%20Queues"></a>
+                <a name="//apple_ref/swift/Section/Managing Callback Queues" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Managing%20Callback%20Queues"></a>
+                  <h3 class="section-name"><p>Managing Callback Queues</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)completionQueue"></a>
+                    <a name="//apple_ref/swift/Property/completionQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)completionQueue">completionQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The dispatch queue for <code>completionBlock</code>. If <code>NULL</code> (default), the main queue is used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">dispatch_queue_t</span> <span class="n">completionQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">completionQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(py)completionGroup"></a>
+                    <a name="//apple_ref/swift/Property/completionGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(py)completionGroup">completionGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The dispatch group for <code>completionBlock</code>. If <code>NULL</code> (default), a private dispatch group is used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">dispatch_group_t</span> <span class="n">completionGroup</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">completionGroup</span><span class="p">:</span> <span class="kt">DispatchGroup</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)initWithSessionConfiguration:"></a>
+                    <a name="//apple_ref/swift/Method/-initWithSessionConfiguration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)initWithSessionConfiguration:">-initWithSessionConfiguration:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns a manager for a session created with the specified configuration. This is the designated initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithSessionConfiguration</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURLSessionConfiguration</span> <span class="o">*</span><span class="p">)</span><span class="nv">configuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">sessionConfiguration</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt">URLSessionConfiguration</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The configuration used to create the managed session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A manager for a newly-created session.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)invalidateSessionCancelingTasks:resetSession:"></a>
+                    <a name="//apple_ref/swift/Method/-invalidateSessionCancelingTasks:resetSession:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)invalidateSessionCancelingTasks:resetSession:">-invalidateSessionCancelingTasks:<wbr>resetSession:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invalidates the managed session, optionally canceling pending tasks and optionally resets given session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">invalidateSessionCancelingTasks</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">cancelPendingTasks</span>
+                           <span class="nf">resetSession</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">resetSession</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">invalidateSessionCancelingTasks</span><span class="p">(</span><span class="n">_</span> <span class="nv">cancelPendingTasks</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">resetSession</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelPendingTasks</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether or not to cancel pending tasks.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resetSession</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether or not to reset the session of the manager.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Running%20Data%20Tasks"></a>
+                <a name="//apple_ref/swift/Section/Running Data Tasks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Running%20Data%20Tasks"></a>
+                  <h3 class="section-name"><p>Running Data Tasks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">-dataTaskWithRequest:<wbr>uploadProgress:<wbr>downloadProgress:<wbr>completionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSURLSessionDataTask</code> with the specified request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">dataTaskWithRequest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURLRequest</span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+         <span class="nf">uploadProgress</span><span class="p">:</span>
+             <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">uploadProgressBlock</span>
+       <span class="nf">downloadProgress</span><span class="p">:</span>
+           <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">downloadProgressBlock</span>
+      <span class="nf">completionHandler</span><span class="p">:</span>
+          <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">id</span> <span class="n">_Nullable</span><span class="p">,</span>
+                             <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dataTask</span><span class="p">(</span><span class="n">with</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="n">uploadProgress</span> <span class="nv">uploadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="n">downloadProgress</span> <span class="nv">downloadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSessionDataTask</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The HTTP request for the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uploadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>downloadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Running%20Upload%20Tasks"></a>
+                <a name="//apple_ref/swift/Section/Running Upload Tasks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Running%20Upload%20Tasks"></a>
+                  <h3 class="section-name"><p>Running Upload Tasks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)uploadTaskWithRequest:fromFile:progress:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-uploadTaskWithRequest:fromFile:progress:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)uploadTaskWithRequest:fromFile:progress:completionHandler:">-uploadTaskWithRequest:<wbr>fromFile:<wbr>progress:<wbr>completionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSURLSessionUploadTask</code> with the specified request for a local file.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p><code>attemptsToRecreateUploadTasksForBackgroundSessions</code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionUploadTask</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">uploadTaskWithRequest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURLRequest</span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                 <span class="nf">fromFile</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">fileURL</span>
+                 <span class="nf">progress</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+                              <span class="n">uploadProgressBlock</span>
+        <span class="n">completionHandler</span><span class="o">:</span>
+            <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">id</span> <span class="n">_Nullable</span><span class="p">,</span>
+                               <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">uploadTask</span><span class="p">(</span><span class="n">with</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="n">fromFile</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="n">progress</span> <span class="nv">uploadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSessionUploadTask</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The HTTP request for the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fileURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A URL to the local file to be uploaded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uploadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)uploadTaskWithRequest:fromData:progress:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-uploadTaskWithRequest:fromData:progress:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)uploadTaskWithRequest:fromData:progress:completionHandler:">-uploadTaskWithRequest:<wbr>fromData:<wbr>progress:<wbr>completionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSURLSessionUploadTask</code> with the specified request for an HTTP body.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionUploadTask</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">uploadTaskWithRequest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURLRequest</span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                 <span class="nf">fromData</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">bodyData</span>
+                 <span class="nf">progress</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+                              <span class="n">uploadProgressBlock</span>
+        <span class="n">completionHandler</span><span class="o">:</span>
+            <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">id</span> <span class="n">_Nullable</span><span class="p">,</span>
+                               <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">uploadTask</span><span class="p">(</span><span class="n">with</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="n">from</span> <span class="nv">bodyData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="n">progress</span> <span class="nv">uploadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSessionUploadTask</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The HTTP request for the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bodyData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A data object containing the HTTP body to be uploaded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uploadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)uploadTaskWithStreamedRequest:progress:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-uploadTaskWithStreamedRequest:progress:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)uploadTaskWithStreamedRequest:progress:completionHandler:">-uploadTaskWithStreamedRequest:<wbr>progress:<wbr>completionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSURLSessionUploadTask</code> with the specified streaming request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionUploadTask</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">uploadTaskWithStreamedRequest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURLRequest</span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                         <span class="nf">progress</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+                                      <span class="n">uploadProgressBlock</span>
+                <span class="n">completionHandler</span><span class="o">:</span>
+                    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">id</span> <span class="n">_Nullable</span><span class="p">,</span>
+                                       <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">uploadTask</span><span class="p">(</span><span class="n">withStreamedRequest</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="n">progress</span> <span class="nv">uploadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSessionUploadTask</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The HTTP request for the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uploadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Running%20Download%20Tasks"></a>
+                <a name="//apple_ref/swift/Section/Running Download Tasks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Running%20Download%20Tasks"></a>
+                  <h3 class="section-name"><p>Running Download Tasks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)downloadTaskWithRequest:progress:destination:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-downloadTaskWithRequest:progress:destination:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)downloadTaskWithRequest:progress:destination:completionHandler:">-downloadTaskWithRequest:<wbr>progress:<wbr>destination:<wbr>completionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSURLSessionDownloadTask</code> with the specified request.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>If using a background <code>NSURLSessionConfiguration</code> on iOS, these blocks will be lost when the app is terminated. Background sessions may prefer to use <code><a href="../Classes/AFURLSessionManager.html#/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidFinishDownloadingBlock:">-setDownloadTaskDidFinishDownloadingBlock:</a></code> to specify the URL for saving the downloaded file, rather than the destination block of this method.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionDownloadTask</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">downloadTaskWithRequest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURLRequest</span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                   <span class="nf">progress</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+                                <span class="n">downloadProgressBlock</span>
+                <span class="n">destination</span><span class="o">:</span><span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">destination</span>
+          <span class="n">completionHandler</span><span class="o">:</span>
+              <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                 <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">downloadTask</span><span class="p">(</span><span class="n">with</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="n">progress</span> <span class="nv">downloadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">destination</span><span class="p">:</span> <span class="p">((</span><span class="kt">URL</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">)?,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">URL</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSessionDownloadTask</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The HTTP request for the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>downloadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destination</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed in order to determine the destination of the downloaded file. This block takes two arguments, the target path &amp; the server response, and returns the desired file URL of the resulting download. The temporary file used during the download will be automatically deleted after being moved to the returned URL.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be executed when a task finishes. This block has no return value and takes three arguments: the server response, the path of the downloaded file, and the error describing the network or parsing error that occurred, if any.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)downloadTaskWithResumeData:progress:destination:completionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-downloadTaskWithResumeData:progress:destination:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)downloadTaskWithResumeData:progress:destination:completionHandler:">-downloadTaskWithResumeData:<wbr>progress:<wbr>destination:<wbr>completionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code>NSURLSessionDownloadTask</code> with the specified resume data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionDownloadTask</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">downloadTaskWithResumeData</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">resumeData</span>
+                      <span class="nf">progress</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSProgress</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span>
+                                   <span class="n">downloadProgressBlock</span>
+                   <span class="n">destination</span><span class="o">:</span><span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+                                   <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                   <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">destination</span>
+             <span class="n">completionHandler</span><span class="o">:</span>
+                 <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                                    <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">downloadTask</span><span class="p">(</span><span class="n">withResumeData</span> <span class="nv">resumeData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">progress</span> <span class="nv">downloadProgressBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Progress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">destination</span><span class="p">:</span> <span class="p">((</span><span class="kt">URL</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">)?,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">URL</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSessionDownloadTask</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resumeData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data used to resume downloading.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>downloadProgressBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destination</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed in order to determine the destination of the downloaded file. This block takes two arguments, the target path &amp; the server response, and returns the desired file URL of the resulting download. The temporary file used during the download will be automatically deleted after being moved to the returned URL.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block to be executed when a task finishes. This block has no return value and takes three arguments: the server response, the path of the downloaded file, and the error describing the network or parsing error that occurred, if any.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Getting%20Progress%20for%20Tasks"></a>
+                <a name="//apple_ref/swift/Section/Getting Progress for Tasks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Getting%20Progress%20for%20Tasks"></a>
+                  <h3 class="section-name"><p>Getting Progress for Tasks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)uploadProgressForTask:"></a>
+                    <a name="//apple_ref/swift/Method/-uploadProgressForTask:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)uploadProgressForTask:">-uploadProgressForTask:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the upload progress of the specified task.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSProgress</span> <span class="o">*</span><span class="p">)</span><span class="nf">uploadProgressForTask</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="p">)</span><span class="nv">task</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">uploadProgress</span><span class="p">(</span><span class="k">for</span> <span class="nv">task</span><span class="p">:</span> <span class="kt">URLSessionTask</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Progress</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The session task. Must not be <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSProgress</code> object reporting the upload progress of a task, or <code>nil</code> if the progress is unavailable.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)downloadProgressForTask:"></a>
+                    <a name="//apple_ref/swift/Method/-downloadProgressForTask:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)downloadProgressForTask:">-downloadProgressForTask:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the download progress of the specified task.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSProgress</span> <span class="o">*</span><span class="p">)</span><span class="nf">downloadProgressForTask</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="p">)</span><span class="nv">task</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">downloadProgress</span><span class="p">(</span><span class="k">for</span> <span class="nv">task</span><span class="p">:</span> <span class="kt">URLSessionTask</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Progress</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>task</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The session task. Must not be <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSProgress</code> object reporting the download progress of a task, or <code>nil</code> if the progress is unavailable.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setting%20Session%20Delegate%20Callbacks"></a>
+                <a name="//apple_ref/swift/Section/Setting Session Delegate Callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setting%20Session%20Delegate%20Callbacks"></a>
+                  <h3 class="section-name"><p>Setting Session Delegate Callbacks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setSessionDidBecomeInvalidBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setSessionDidBecomeInvalidBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setSessionDidBecomeInvalidBlock:">-setSessionDidBecomeInvalidBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when the managed session becomes invalid, as handled by the <code>NSURLSessionDelegate</code> method <code>URLSession:didBecomeInvalidWithError:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSessionDidBecomeInvalidBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setSessionDidBecomeInvalidBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when the managed session becomes invalid. The block has no return value, and takes two arguments: the session, and the error related to the cause of invalidation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setSessionDidReceiveAuthenticationChallengeBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setSessionDidReceiveAuthenticationChallengeBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setSessionDidReceiveAuthenticationChallengeBlock:">-setSessionDidReceiveAuthenticationChallengeBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a connection level authentication challenge has occurred, as handled by the <code>NSURLSessionDelegate</code> method <code>URLSession:didReceiveChallenge:completionHandler:</code>.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Implementing a session authentication challenge handler yourself totally bypasses AFNetworking&rsquo;s security policy defined in <code><a href="../Classes/AFSecurityPolicy.html">AFSecurityPolicy</a></code>. Make sure you fully understand the implications before implementing a custom session authentication challenge handler. If you do not want to bypass AFNetworking&rsquo;s security policy, use <code>setTaskDidReceiveAuthenticationChallengeBlock:</code> instead.</p>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>-securityPolicy</p>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>-setTaskDidReceiveAuthenticationChallengeBlock:</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSessionDidReceiveAuthenticationChallengeBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURLSessionAuthChallengeDisposition</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+        <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLAuthenticationChallenge</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+        <span class="n">NSURLCredential</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setSessionDidReceiveAuthenticationChallenge</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLAuthenticationChallenge</span><span class="p">,</span> <span class="kt">AutoreleasingUnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">URLCredential</span><span class="p">?</span><span class="o">&gt;</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">URLSession</span><span class="o">.</span><span class="kt">AuthChallengeDisposition</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a connection level authentication challenge has occurred. The block returns the disposition of the authentication challenge, and takes three arguments: the session, the authentication challenge, and a pointer to the credential that should be used to resolve the challenge.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setting%20Task%20Delegate%20Callbacks"></a>
+                <a name="//apple_ref/swift/Section/Setting Task Delegate Callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setting%20Task%20Delegate%20Callbacks"></a>
+                  <h3 class="section-name"><p>Setting Task Delegate Callbacks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setTaskNeedNewBodyStreamBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setTaskNeedNewBodyStreamBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setTaskNeedNewBodyStreamBlock:">-setTaskNeedNewBodyStreamBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a task requires a new request body stream to send to the remote server, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:needNewBodyStream:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTaskNeedNewBodyStreamBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSInputStream</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                          <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTaskNeedNewBodyStreamBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionTask</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">InputStream</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a task requires a new request body stream.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setTaskWillPerformHTTPRedirectionBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setTaskWillPerformHTTPRedirectionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setTaskWillPerformHTTPRedirectionBlock:">-setTaskWillPerformHTTPRedirectionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when an HTTP request is attempting to perform a redirection to a different URL, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:willPerformHTTPRedirection:newRequest:completionHandler:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTaskWillPerformHTTPRedirectionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURLRequest</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                          <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                          <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                          <span class="n">NSURLRequest</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTaskWillPerformHTTPRedirectionBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionTask</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">,</span> <span class="kt">URLRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLRequest</span><span class="p">?)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when an HTTP request is attempting to perform a redirection to a different URL. The block returns the request to be made for the redirection, and takes four arguments: the session, the task, the redirection response, and the request corresponding to the redirection response.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setAuthenticationChallengeHandler:"></a>
+                    <a name="//apple_ref/swift/Method/-setAuthenticationChallengeHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setAuthenticationChallengeHandler:">-setAuthenticationChallengeHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a session task has received a request specific authentication challenge, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:didReceiveChallenge:completionHandler:</code>.</p>
+
+<p>When implementing an authentication challenge handler, you should check the authentication method first (<code>challenge.protectionSpace.authenticationMethod</code>) to decide if you want to handle the authentication challenge yourself or if you want AFNetworking to handle it. If you want AFNetworking to handle the authentication challenge, just return <code>@(NSURLSessionAuthChallengePerformDefaultHandling)</code>. For example, you certainly want AFNetworking to handle certificate validation (i.e. authentication method == <code>NSURLAuthenticationMethodServerTrust</code>) as defined by the security policy. If you want to handle the challenge yourself, you have four options:</p>
+
+<ol>
+<li>Return <code>nil</code> from the authentication challenge handler. You <strong>MUST</strong> call the completion handler with a disposition and credentials yourself. Use this if you need to present a user interface to let the user enter their credentials.</li>
+<li>Return an <code>NSError</code> object from the authentication challenge handler. You <strong>MUST NOT</strong> call the completion handler when returning an <code>NSError</code>. The returned error will be reported in the completion handler of the task. Use this if you need to abort an authentication challenge with a specific error.</li>
+<li>Return an <code>NSURLCredential</code> object from the authentication challenge handler. You <strong>MUST NOT</strong> call the completion handler when returning an <code>NSURLCredential</code>. The returned credentials will be used to fulfil the challenge. Use this when you can get credentials without presenting a user interface.</li>
+<li>Return an <code>NSNumber</code> object wrapping an <code>NSURLSessionAuthChallengeDisposition</code>. Supported values are <code>@(NSURLSessionAuthChallengePerformDefaultHandling)</code>, <code>@(NSURLSessionAuthChallengeCancelAuthenticationChallenge)</code> and <code>@(NSURLSessionAuthChallengeRejectProtectionSpace)</code>. You <strong>MUST NOT</strong> call the completion handler when returning an <code>NSNumber</code>.</li>
+</ol>
+
+<p>If you return anything else from the authentication challenge handler, an exception will be thrown.</p>
+
+<p>For more information about how URL sessions handle the different types of authentication challenges, see <a href="https://developer.apple.com/reference/foundation/nsurlsession?language=objc">NSURLSession</a> and <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html">URL Session Programming Guide</a>.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    -securityPolicy
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAuthenticationChallengeHandler</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span> <span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+        <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+        <span class="n">NSURLAuthenticationChallenge</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+        <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSURLSessionAuthChallengeDisposition</span><span class="p">,</span>
+                         <span class="n">NSURLCredential</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)))</span>
+        <span class="n">authenticationChallengeHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setAuthenticationChallengeHandler</span><span class="p">(</span><span class="n">_</span> <span class="nv">authenticationChallengeHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionTask</span><span class="p">,</span> <span class="kt">URLAuthenticationChallenge</span><span class="p">,</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">URLSession</span><span class="o">.</span><span class="kt">AuthChallengeDisposition</span><span class="p">,</span> <span class="kt">URLCredential</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authenticationChallengeHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a session task has received a request specific authentication challenge.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setTaskDidSendBodyDataBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setTaskDidSendBodyDataBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setTaskDidSendBodyDataBlock:">-setTaskDidSendBodyDataBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed periodically to track upload progress, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTaskDidSendBodyDataBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                       <span class="kt">int64_t</span><span class="p">,</span> <span class="kt">int64_t</span><span class="p">,</span> <span class="kt">int64_t</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTaskDidSendBodyDataBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionTask</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be called when an undetermined number of bytes have been uploaded to the server. This block has no return value and takes five arguments: the session, the task, the number of bytes written since the last time the upload progress block was called, the total bytes written, and the total bytes expected to be written during the request, as initially determined by the length of the HTTP body. This block may be called multiple times, and will execute on the main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setTaskDidCompleteBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setTaskDidCompleteBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setTaskDidCompleteBlock:">-setTaskDidCompleteBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed as the last message related to a specific task, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:didCompleteWithError:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTaskDidCompleteBlock</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                                   <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                                   <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTaskDidComplete</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionTask</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a session task is completed. The block has no return value, and takes three arguments: the session, the task, and any error that occurred in the process of executing the task.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setTaskDidFinishCollectingMetricsBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setTaskDidFinishCollectingMetricsBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setTaskDidFinishCollectingMetricsBlock:">-setTaskDidFinishCollectingMetricsBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTaskDidFinishCollectingMetricsBlock</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n"><a href="../Classes/AFURLSessionManager.html#/c:objc(cs)AFURLSessionManager(py)session">session</a></span><span class="p">,</span> <span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">task</span><span class="p">,</span> <span class="n">NSURLSessionTaskMetrics</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">metrics</span><span class="p">))</span><span class="nv">block</span> <span class="n">AF_API_AVAILABLE</span><span class="p">(</span><span class="n">ios</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">macosx</span><span class="p">(</span><span class="mi">10</span><span class="p">.</span><span class="mi">12</span><span class="p">),</span> <span class="n">watchos</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">tvos</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTaskDidFinishCollectingMetricsBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionTask</span><span class="p">,</span> <span class="kt">URLSessionTaskMetrics</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setting%20Data%20Task%20Delegate%20Callbacks"></a>
+                <a name="//apple_ref/swift/Section/Setting Data Task Delegate Callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setting%20Data%20Task%20Delegate%20Callbacks"></a>
+                  <h3 class="section-name"><p>Setting Data Task Delegate Callbacks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDataTaskDidReceiveResponseBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDataTaskDidReceiveResponseBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDataTaskDidReceiveResponseBlock:">-setDataTaskDidReceiveResponseBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a data task has received a response, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:didReceiveResponse:completionHandler:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDataTaskDidReceiveResponseBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURLSessionResponseDisposition</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+        <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+        <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDataTaskDidReceiveResponseBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDataTask</span><span class="p">,</span> <span class="kt">URLResponse</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URLSession</span><span class="o">.</span><span class="kt">ResponseDisposition</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a data task has received a response. The block returns the disposition of the session response, and takes three arguments: the session, the data task, and the received response.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDataTaskDidBecomeDownloadTaskBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDataTaskDidBecomeDownloadTaskBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDataTaskDidBecomeDownloadTaskBlock:">-setDataTaskDidBecomeDownloadTaskBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a data task has become a download task, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:didBecomeDownloadTask:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDataTaskDidBecomeDownloadTaskBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                       <span class="n">NSURLSessionDownloadTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDataTaskDidBecomeDownloadTaskBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDataTask</span><span class="p">,</span> <span class="kt">URLSessionDownloadTask</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a data task has become a download task. The block has no return value, and takes three arguments: the session, the data task, and the download task it has become.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDataTaskDidReceiveDataBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDataTaskDidReceiveDataBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDataTaskDidReceiveDataBlock:">-setDataTaskDidReceiveDataBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a data task receives data, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:didReceiveData:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDataTaskDidReceiveDataBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                       <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDataTaskDidReceiveDataBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDataTask</span><span class="p">,</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be called when an undetermined number of bytes have been downloaded from the server. This block has no return value and takes three arguments: the session, the data task, and the data received. This block may be called multiple times, and will execute on the session manager operation queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDataTaskWillCacheResponseBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDataTaskWillCacheResponseBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDataTaskWillCacheResponseBlock:">-setDataTaskWillCacheResponseBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed to determine the caching behavior of a data task, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:willCacheResponse:completionHandler:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDataTaskWillCacheResponseBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSCachedURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
+        <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+        <span class="n">NSCachedURLResponse</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDataTaskWillCacheResponseBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDataTask</span><span class="p">,</span> <span class="kt">CachedURLResponse</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CachedURLResponse</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed to determine the caching behavior of a data task. The block returns the response to cache, and takes three arguments: the session, the data task, and the proposed cached URL response.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDidFinishEventsForBackgroundURLSessionBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDidFinishEventsForBackgroundURLSessionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDidFinishEventsForBackgroundURLSessionBlock:">-setDidFinishEventsForBackgroundURLSessionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed once all messages enqueued for a session have been delivered, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSessionDidFinishEventsForBackgroundURLSession:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDidFinishEventsForBackgroundURLSessionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDidFinishEventsForBackgroundURLSessionBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed once all messages enqueued for a session have been delivered. The block has no return value and takes a single argument: the session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setting%20Download%20Task%20Delegate%20Callbacks"></a>
+                <a name="//apple_ref/swift/Section/Setting Download Task Delegate Callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setting%20Download%20Task%20Delegate%20Callbacks"></a>
+                  <h3 class="section-name"><p>Setting Download Task Delegate Callbacks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidFinishDownloadingBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDownloadTaskDidFinishDownloadingBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidFinishDownloadingBlock:">-setDownloadTaskDidFinishDownloadingBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a download task has completed a download, as handled by the <code>NSURLSessionDownloadDelegate</code> method <code>URLSession:downloadTask:didFinishDownloadingToURL:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDownloadTaskDidFinishDownloadingBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                   <span class="n">NSURLSessionDownloadTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                   <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDownloadTaskDidFinishDownloadingBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDownloadTask</span><span class="p">,</span> <span class="kt">URL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a download task has completed. The block returns the URL the download should be moved to, and takes three arguments: the session, the download task, and the temporary location of the downloaded file. If the file manager encounters an error while attempting to move the temporary file to the destination, an <code><a href="../Constants.html#/c:@AFURLSessionDownloadTaskDidFailToMoveFileNotification">AFURLSessionDownloadTaskDidFailToMoveFileNotification</a></code> will be posted, with the download task as its object, and the user info of the error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidWriteDataBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDownloadTaskDidWriteDataBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidWriteDataBlock:">-setDownloadTaskDidWriteDataBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed periodically to track download progress, as handled by the <code>NSURLSessionDownloadDelegate</code> method <code>URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDownloadTaskDidWriteDataBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                       <span class="n">NSURLSessionDownloadTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="kt">int64_t</span><span class="p">,</span> <span class="kt">int64_t</span><span class="p">,</span>
+                       <span class="kt">int64_t</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDownloadTaskDidWriteDataBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDownloadTask</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be called when an undetermined number of bytes have been downloaded from the server. This block has no return value and takes five arguments: the session, the download task, the number of bytes read since the last time the download progress block was called, the total bytes read, and the total bytes expected to be read during the request, as initially determined by the expected content size of the <code>NSHTTPURLResponse</code> object. This block may be called multiple times, and will execute on the session manager operation queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidResumeBlock:"></a>
+                    <a name="//apple_ref/swift/Method/-setDownloadTaskDidResumeBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AFURLSessionManager(im)setDownloadTaskDidResumeBlock:">-setDownloadTaskDidResumeBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a block to be executed when a download task has been resumed, as handled by the <code>NSURLSessionDownloadDelegate</code> method <code>URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDownloadTaskDidResumeBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                       <span class="n">NSURLSessionDownloadTask</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span> <span class="kt">int64_t</span><span class="p">,</span>
+                       <span class="kt">int64_t</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDownloadTaskDidResumeBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">URLSession</span><span class="p">,</span> <span class="kt">URLSessionDownloadTask</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">,</span> <span class="kt">Int64</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block object to be executed when a download task has been resumed. The block has no return value and takes four arguments: the session, the download task, the file offset of the resumed download, and the total number of bytes expected to be downloaded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
